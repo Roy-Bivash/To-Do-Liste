@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TODO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="createPage()">
+
+  <div class="container global">
+    <h1 class="text-center">Editer votre Todo ici</h1>
+    <br><br>
+    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Nom</label>
+          <input type="text" class="form-control" id="saisieNom">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <input type="text" class="form-control" id="saisieDesc">
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control" id="saisieDate">
+          </div>
+          <div class="col-auto">
+            <label class="form-label">Statut</label>
+            <select id="saisieStatut" class="form-select" aria-label="Default select example">
+              <option value="To Do">To Do</option>
+              <option value="En Cours">En Cours</option>
+              <option value="Terminé">Terminé</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" id="btnModifier">Valider</button>
+        <a href="./" type="button" class="btn btn-outline-danger">Annuler</a>
+      </form>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="js/editer.js"></script>
+</body>
+
+</html>

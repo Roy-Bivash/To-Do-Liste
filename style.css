@@ -1,0 +1,60 @@
+.global{
+  margin-top: 10vh;
+}
+body{
+  background-color: #eafaf1 ;
+}
+
+.todoNom{
+  text-decoration: none;
+  color: black;
+  transition: .2s;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.todoNom:hover{
+  color: gray;
+}
+
+.alertBox{
+  visibility: hidden;
+  background-color: white;
+  height: min-content;
+  width: 60vw;
+  border-radius: 15px;
+  position: absolute;
+  top: -1vh;
+  left: 20vw;
+  box-shadow: 5px 3px 23px -3px #000000;
+  padding: 30px;
+  transition: .2s;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.statut{
+  width: fit-content;
+  padding: 0 5px 0 5px;
+  border-radius: 4px;
+}
+
+.bgRed{
+  background-color: #EC7063;
+}
+
+.bgOrange{
+  background-color: #F0B27A;
+}
+
+.bgGreen{
+  background-color: #82E0AA;
+}
